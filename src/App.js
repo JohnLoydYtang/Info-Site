@@ -1,10 +1,16 @@
 import Header from "../src/parts/header/Header";
 import Accordion from 'react-bootstrap/Accordion';
+import './App.css';
 
 function App() {
   return (
     <div>
       <Header />
+      <div className="App">
+        <p>This is my React Info-Site!! <br />
+          Here we can see how i set-up my ReactJS Projects.
+        </p>
+      </div>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Accordion Item #1</Accordion.Header>
