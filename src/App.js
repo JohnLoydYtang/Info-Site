@@ -7,6 +7,7 @@ import Figure1 from "../src/assets/images/figures/figure-1.png";
 import './App.css';
 
 function App() {
+  const code = `import { BrowserRouter as Router, Routes, Route } from "react-router-dom";`;
   return (
     <div >
       <NavBar />
@@ -23,6 +24,7 @@ function App() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
+            <br /> <br />
             <div className="Figure-css">
               <Figure>
                 <Figure.Image
@@ -52,6 +54,7 @@ function App() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
+            <br /> <br />
             <Alert variant="dark"> /* The following line can be included in your src/index.js or App.js file */
               <hr />
               <p className="mb-0">
@@ -78,15 +81,18 @@ function App() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
+            <br /> <br />
             <Alert variant="dark">Set-up (Put this in your index.js or other navigation file)
               <hr />
               <p className="mb-0">
-                <code>import BrowserRouter as Router, Routes, Route from react-router-dom </code>
+                <code>{code}</code>
               </p>
             </Alert>
+
             Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident,
+            <br /> <br />
             <Alert variant="dark">Set-up (Put this in your index.js or other navigation file)
               <hr />
               <p className="mb-0">
