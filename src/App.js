@@ -93,10 +93,10 @@ function App() {
                 <code>npm install react-dom</code>
               </p>
             </Alert>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            By installing react-dom, you enable your React application
+            to interact with the browser's Document Object Model (DOM),
+            allowing you to mount React components to a DOM node and update it
+            efficiently as your application's state changes.
             <br /> <br />
             <Alert variant="dark">Set-up (Put this in your index.js or other navigation file)
               <hr />
@@ -104,10 +104,10 @@ function App() {
                 <code>{code}</code>
               </p>
             </Alert>
-
-            Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident,
+            By importing these components, you can set up dynamic
+            routing in your React application, allowing users
+            to navigate through different parts of your app without
+            refreshing the page.
             <br /> <br />
             <Alert variant="dark">Set-up (Put this in your index.js or other navigation file)
               <hr />
@@ -115,8 +115,10 @@ function App() {
                 <code>{render}</code>
               </p>
             </Alert>
-            sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            this code configures the entry point of a React application
+            to use React Router for navigation, with strict mode enabled
+            for additional developer warnings. It sets up the application to
+            respond to changes in the URL by rendering different components accordingly.
           </Accordion.Body>
         </Accordion.Item>
         {/* Finished */}
