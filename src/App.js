@@ -60,10 +60,13 @@ function App() {
                 <code>npm install react-bootstrap bootstrap</code>
               </p>
             </Alert>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            By running this command, you are adding both the react-bootstrap and
+            bootstrap packages to your project. The react-bootstrap package allows you
+            to use Bootstrap components as React components, making it easier to integrate
+            Bootstrap into a React application. The bootstrap package provides the CSS styles
+            that these components will use. After installation, you typically import the Bootstrap
+            CSS into your main JavaScript file (like index.js or App.js) to apply the styles
+            globally across your application.
             <br /> <br />
             <Alert variant="dark"> The following line can be included in your src/index.js or App.js file
               <hr />
@@ -71,10 +74,13 @@ function App() {
                 <code>import 'bootstrap/dist/css/bootstrap.css';</code>
               </p>
             </Alert>
-            Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            When this line is executed, the Bootstrap
+            CSS file is loaded into the application.
+            This makes the predefined classes, such as .btn,
+            .navbar, .form-control, and others, available for use in your
+            React components. By doing so, you can leverage Bootstrap's grid system,
+            typography, buttons, forms, and other components to style your application
+            without having to write custom CSS for these elements.
           </Accordion.Body>
         </Accordion.Item>
         {/* Navigation */}
