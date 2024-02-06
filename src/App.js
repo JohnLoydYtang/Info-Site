@@ -27,13 +27,13 @@ function App() {
         <Accordion.Item eventKey="0">
           <Accordion.Header><strong>Starting ReactJs Project</strong></Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Starting with React JS involves understanding its core principles and
+            getting hands-on experience with building user interfaces.
+            React is a JavaScript library that enables developers to create large web
+            applications that can change data without reloading the page.
+            The main purpose of React is to be fast, scalable, and simple.
+            It works only on user interfaces in the application, which means
+            it can be used with other libraries or frameworks, like AngularJS in MVC.
             <br /> <br />
             <div className="Figure-css">
               <Figure>
@@ -44,7 +44,7 @@ function App() {
                   src={Figure1}
                 />
                 <Figure.Caption className="Figure-css">
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  Command for starting a reactjs Project.
                 </Figure.Caption>
               </Figure>
             </div>
