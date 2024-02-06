@@ -1,15 +1,25 @@
 import NavBar from "../src/component/navbar/NavBar";
 import Header from "../src/parts/header/Header";
-import Accordion from 'react-bootstrap/Accordion';
-import Alert from 'react-bootstrap/Alert';
-import Figure from 'react-bootstrap/Figure';
+import Gif from "../src/assets/images/Gif/17959-Good-Job-Gif.gif";
 import Figure1 from "../src/assets/images/figures/figure-1.png";
+import { Accordion, Alert, Figure, Image, Col } from "react-bootstrap";
 import './App.css';
 
 function App() {
   const code = `import { BrowserRouter as Router, Routes, Route } from "react-router-dom";`;
+  const render = `
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(
+    <React.StrictMode>
+      <Router>
+        <Routes>
+          <Route path="/" element={<App />} />
+        </Routes>
+      </Router>
+    </React.StrictMode>
+  );`;
   return (
-    <div >
+    <div>
       <NavBar />
       <Header />
       <Accordion defaultActiveKey="0">
@@ -55,7 +65,7 @@ function App() {
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
             <br /> <br />
-            <Alert variant="dark"> /* The following line can be included in your src/index.js or App.js file */
+            <Alert variant="dark"> The following line can be included in your src/index.js or App.js file
               <hr />
               <p className="mb-0">
                 <code>import 'bootstrap/dist/css/bootstrap.css';</code>
@@ -96,35 +106,36 @@ function App() {
             <Alert variant="dark">Set-up (Put this in your index.js or other navigation file)
               <hr />
               <p className="mb-0">
-                <code>import BrowserRouter as Router, Routes, Route from react-router-dom </code>
+                <code>{render}</code>
               </p>
             </Alert>
             sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="4">
-          <Accordion.Header>Accordion Item #4</Accordion.Header>
+        {/* Finished */}
+        <Accordion.Item eventKey="3">
+          <Accordion.Header><strong>Final</strong></Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            aliquip ex ea commodo consequat.
+            Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="5">
-          <Accordion.Header>Accordion Item #5</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <div className="Figure-css">
+              <br />
+              Then you are ready to code!!
+            </div>
+            <br />
+            <div className="Figure-css">
+              <Col xs={6} md={4}>
+                <Image src={Gif} thumbnail />
+              </Col>
+            </div>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
